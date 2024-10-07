@@ -1,3 +1,10 @@
+DROP TABLE IF EXISTS Persons CASCADE;
+CREATE TABLE Persons (
+  id VARCHAR(255) PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  born INTEGER NOT NULL
+);
+
 INSERT INTO Movies (id, title, released, tagline) VALUES
 ('TheMatrix', 'The Matrix', 1999, 'Welcome to the Real World'),
 ('TheMatrixReloaded', 'The Matrix Reloaded', 2003, 'Free your mind'),
